@@ -1,0 +1,4 @@
+interface:
+  display_name: "Netdisco"
+  short_description: "从源码契约出发，开发、理解、审查和交付 Netdisco 与 SNMP::Info"
+  default_prompt: "使用 $netdisco 分析并完成当前任务：追踪源码契约，选择合适的扩展层，遵循项目范式，并说明实际验证结果与边界。"

@@ -1,0 +1,12 @@
+interface:
+  display_name: Motor Admin 项目维护
+  short_description: "维护 Motor Rails/Vue 全栈：业务、安全、交互、可靠性、审查与交付"
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

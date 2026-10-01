@@ -1,0 +1,5 @@
+interface:
+  display_name: "Rails / Vue 工程判断"
+  short_description: "以业务不变量、版本语义和验证证据指导 Rails/Vue 实现、审查与重构"
+policy:
+  allow_implicit_invocation: true

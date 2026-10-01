@@ -1,0 +1,22 @@
+# 新项目的可选起点;不要覆盖项目已有约定(已有 120 列、单引号等一律保留)。
+# 落地前:把 TargetRubyVersion 设为项目最低支持的 Ruby,并核对 RuboCop 版本对插件的加载语法。
+# Rails 项目若已继承 rubocop-rails-omakase,不要再叠加另一整套风格配置。
+AllCops:
+  NewCops: disable          # 避免升级工具时门禁被意外改变;升级时评估新规则再显式启用
+  # TargetRubyVersion: 3.2  # ← 按项目最低支持版本设置后取消注释
+
+Layout/IndentationWidth:
+  Width: 2
+
+Layout/LineLength:
+  Max: 100                  # 仅新项目的起点;已有 120 列的项目保持 120
+
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
+
+# 以下两项交给项目决定,默认不在门禁里强推:
+Style/Documentation:
+  Enabled: false            # 不强制每个类写注释;需要文档的地方由评审判断
+
+Style/FrozenStringLiteralComment:
+  Enabled: false            # 沿用项目约定;启用前确认团队意愿
